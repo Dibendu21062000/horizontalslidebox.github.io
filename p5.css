@@ -69,13 +69,13 @@ body{
 /* ************************** horizontal slidebox **************************** */
 .smallbox{
     /* margin:auto; */
-    min-width: 250px;
-    height:180px ;
+    min-width: 310px;
+    height:234px ;
     background-color: blueviolet;
-    border: 2px solid white;
+    margin-right: 2px;
 }
 .slidebox{
-    height: 180px;
+    height: 234px;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
@@ -86,15 +86,15 @@ body{
 }
 .mainscroll{
     display: flex;
-    align-items: center;
+    align-items: center;    /* adjusts height of button */
 }
 .btn{
-    color: greenyellow;
-    background-color: black;
-    /* outline: none; */
-    padding: 5px 8px;
-    border-radius: 20px;
-    font-size: 20px;
+    color: blue;
+    background-color: aquamarine;
+    border: none;
+    /* padding: 0px 3px; */
+    /* border-radius: 50%; */
+    font-size: 50px;
 }
 /* .slidebox::before{
     position: absolute;
@@ -107,3 +107,12 @@ body{
     background-image: linear-gradient(90deg, black, transparent);
 } */
 /* *************************************************************** */
+
+@media screen and (max-width:450px){
+    .navbar ul li ul{
+        display: none;
+        position:absolute;
+        top:175px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
